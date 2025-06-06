@@ -1,0 +1,31 @@
+name: c_hf_q_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - setuptools
+  - wheel
+  - pytorch=2.6.0
+  - torchvision=0.21.0
+  - torchaudio=2.6.0
+  - jupyterlab
+  - ipython
+  - ipykernel
+  - tqdm
+  - regex
+  - joblib
+  - python-dotenv
+  - pip:
+      - transformers[torch]==4.51.3
+      - bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_x86_64.whl
+      - accelerate==1.7.0
+      - datasets==3.1.0
+      - peft==0.4.0
+      - xformers==0.0.29.post2
+      - trl @ git+https://github.com/huggingface/trl.git@54d4f6b13ab871c2553702856c817c84ab164c22
+      - huggingface-hub==0.31.2
+      - safetensors==0.5.2
+      - tokenizers==0.21.1
+
